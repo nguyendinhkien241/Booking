@@ -1,0 +1,114 @@
+.add-room-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+.add-room-modal-overlay  .add-room-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+.add-room-modal-overlay  .add-room-modal h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+.add-room-modal-overlay  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+.add-room-modal-overlay  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+    width: 110px;
+  }
+  
+.add-room-modal-overlay  .form-group input,
+.add-room-modal-overlay  .form-group textarea,
+.add-room-modal-overlay  .form-group select {
+    width: calc(100% - 110px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+.add-room-modal-overlay  .form-group textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* Styling for the image preview */
+.add-room-modal-overlay  .image-preview {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+.add-room-modal-overlay  .image-preview img {
+    max-width: 100%;
+    max-height: 80px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    object-fit: cover;
+    margin-left: 110px;
+    margin-bottom: 8px;
+  }
+  
+.add-room-modal-overlay  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+.add-room-modal-overlay  .form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+.add-room-modal-overlay  .form-actions button:first-child {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+.add-room-modal-overlay  .form-actions button:first-child:hover {
+    background-color: #c82333;
+  }
+  
+.add-room-modal-overlay  .form-actions button:last-child {
+    background-color: #28a745;
+    color: white;
+  }
+  
+.add-room-modal-overlay  .form-actions button:last-child:hover {
+    background-color: #218838;
+  }
+  
+.add-room-modal-overlay  .form-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

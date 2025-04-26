@@ -1,0 +1,9 @@
+.info {
+    display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.info-main {
+    flex: 1;
+}

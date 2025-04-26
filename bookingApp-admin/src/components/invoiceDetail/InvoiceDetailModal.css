@@ -1,0 +1,126 @@
+/* Overlay của modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Nội dung modal */
+.modal-overlay  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  /* Tiêu đề modal */
+.modal-overlay  .modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Hàng thông tin hóa đơn */
+.modal-overlay  .invoice-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Nhãn thông tin */
+.modal-overlay  .label {
+    font-weight: 600;
+    color: #555;
+    width: 40%;
+  }
+  
+  /* Giá trị thông tin */
+.modal-overlay  .value {
+    color: #333;
+    width: 60%;
+    text-align: right;
+  }
+  
+  /* Hình ảnh khách sạn */
+.modal-overlay  .hotel-image {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Định dạng trạng thái */
+.modal-overlay  .status-Đã-hủy {
+    color: #ff4d4f;
+    font-weight: bold;
+  }
+  
+.modal-overlay  .status-Đã-thanh-toán {
+    color: #52c41a;
+    font-weight: bold;
+  }
+  
+.modal-overlay  .status-Đã-hoàn-thành {
+    color: #1890ff;
+    font-weight: bold;
+  }
+  
+.modal-overlay  .status-Đang-chờ-xử-lý {
+    color: #faad14;
+    font-weight: bold;
+  }
+  
+.modal-overlay  .status-Thanh-toán-sau {
+    color: #722ed1;
+    font-weight: bold;
+  }
+  
+  /* Nút Chi tiết */
+.modal-overlay  .detail-button {
+    padding: 8px 16px;
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+.modal-overlay  .detail-button:hover {
+    background-color: #40a9ff;
+  }
+  
+  /* Nút Đóng */
+.modal-overlay  .close-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 8px 16px;
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+.modal-overlay  .close-button:hover {
+    background-color: #ff7875;
+  }

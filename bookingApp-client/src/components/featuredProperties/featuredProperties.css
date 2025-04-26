@@ -1,0 +1,168 @@
+.fpContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fpTitle {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.fpSubtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.fpSlider {
+  position: relative;
+}
+
+.fpItems {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 10px 0;
+}
+
+.fpItems::-webkit-scrollbar {
+  display: none;
+}
+
+.fpItem {
+  min-width: 280px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.fpImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.fpImg.loading {
+  background: #f0f0f0;
+  height: 180px;
+}
+
+.fpDetails {
+  padding: 15px;
+}
+
+.fpName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.fpCity {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.fpRating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fpTag {
+  font-size: 13px;
+  color: #fff;
+  background: #003580;
+  height: 24px;
+  width: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.fpReviews {
+  font-size: 13px;
+  color: #666;
+  margin-left: 4px;
+}
+
+.fpDiscountTag {
+  background: #febb02;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.fpDuration {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.fpPriceContainer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fpOriginalPrice {
+  font-size: 15px;
+  color: #111;
+}
+
+.fpCheapestPrice {
+  font-size: 17px;
+  font-weight: bold;
+  color: #003580;
+  display: inline;
+}
+
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sliderButton:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.sliderButton.left {
+  left: 10px;
+}
+
+.sliderButton.right {
+  right: 10px;
+}
+
+.sliderButton svg {
+  color: #333;
+  font-size: 16px;
+}

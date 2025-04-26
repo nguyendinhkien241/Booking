@@ -1,0 +1,157 @@
+.manage-table {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+.manage-table .table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+.manage-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+.manage-table th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+.manage-table th {
+    background-color: #0071c2;
+    color: white;
+    font-weight: 600;
+  }
+  
+.manage-table td {
+    font-size: 14px;
+    color: #333;
+  }
+  
+.manage-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+.manage-table .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-room,
+  .btn-edit,
+.manage-table .btn-delete {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+.manage-table .btn-room {
+    background-color: #28a745;
+    color: white;
+  }
+  
+.manage-table .btn-room:hover {
+    background-color: #218838;
+  }
+  
+.manage-table .btn-edit {
+    background-color: #0071c2;
+    color: white;
+  }
+  
+.manage-table .btn-edit:hover {
+    background-color: #005ea6;
+  }
+  
+.manage-table .btn-delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+.manage-table .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+.manage-table .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+.manage-table .entries {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+.manage-table .entries select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+.manage-table .page-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+.manage-table .page-nav button {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+.manage-table .page-nav button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+.manage-table .page-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+  }
+  
+.manage-table .page-nav li {
+    display: flex;
+  }
+  
+.manage-table .page-nav li button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.manage-table .page-nav li.active button {
+    background-color: #0071c2;
+    color: white;
+    border-color: #0071c2;
+  }
+  
+.manage-table .page-nav li button:hover:not(.active button) {
+    background-color: #f5f5f5;
+  }

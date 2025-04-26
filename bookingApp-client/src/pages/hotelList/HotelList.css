@@ -1,0 +1,9 @@
+.hotelList {
+    display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hotelList .hotel-main {
+    flex: 1;
+}

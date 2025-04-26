@@ -1,0 +1,94 @@
+.booking-header {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h6 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.date-range i {
+  margin-right: 5px;
+}
+
+.date-range input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.export-dropdown {
+  position: relative;
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.export-btn i {
+  margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.export-dropdown:hover .dropdown-content {
+  display: block;
+}

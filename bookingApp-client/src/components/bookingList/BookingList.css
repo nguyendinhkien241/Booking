@@ -1,0 +1,265 @@
+.booking-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-list .list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.booking-list .list-header h6 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.booking-list .list-actions {
+  display: flex;
+  align-items: center;
+}
+
+.booking-list .search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.booking-list .search-bar i {
+  margin-right: 5px;
+}
+
+.booking-list .search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.booking-list .filter-dropdown {
+  position: relative;
+  margin-right: 10px;
+}
+
+.booking-list .filter-dropdown button {
+  padding: 5px 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.booking-list .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.booking-list .dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.booking-list .dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.booking-list .filter-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.booking-list .sort-by {
+  display: flex;
+  align-items: center;
+}
+
+.booking-list .sort-by span {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.booking-list .table-container {
+  overflow: auto;
+}
+
+.booking-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-list thead {
+  background-color: #f5f5f5;
+}
+
+.booking-list th,
+td {
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.booking-list th {
+  font-weight: 600;
+}
+
+.booking-list .hotel-info {
+  display: flex;
+  align-items: center;
+}
+
+.booking-list .hotel-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.booking-list .hotel-info p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.booking-list .hotel-info span {
+  font-size: 14px;
+  color: #666;
+}
+
+.booking-list .status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.booking-list .status-upcoming {
+  background-color: #e7f3ff;
+  color: #007bff;
+}
+
+.booking-list .status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.booking-list .status-completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.booking-list .status-cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.booking-list .pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.booking-list .entries {
+  display: flex;
+  align-items: center;
+}
+
+.booking-list .entries select {
+  margin: 0 5px;
+  padding: 5px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+.booking-list .page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.booking-list .page-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.booking-list .page-nav li {
+  margin: 0 5px;
+}
+
+.booking-list .page-nav a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.booking-list .page-nav .active a {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+.booking-list .dropdown-content {
+  display: block; /* Controlled by state */
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+/* Hidden by default when state is false */
+.booking-list .dropdown-content {
+  display: none;
+}
+
+.booking-list .actions { 
+  display: flex; 
+  gap: 10px; 
+}
+.booking-list .btn-pay-now { 
+  background: #28a745; 
+  color: white; 
+  padding: 5px 10px; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 13px;
+  border-radius: 4px;
+}
+.booking-list .btn-cancel { 
+  background: #dc3545; 
+  color: white; 
+  padding: 5px 10px; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.booking-list .btn-complete {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.booking-list .btn-complete:hover {
+  background-color: #218838;
+}

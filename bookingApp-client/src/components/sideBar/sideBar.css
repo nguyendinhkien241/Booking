@@ -1,0 +1,160 @@
+
+
+/* Reset and base styles */
+.sidebar {
+  width: 270px;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.sidebar .user-profile {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar .profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar .profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar .profile-info h6 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.sidebar .profile-info span {
+  font-size: 12px;
+  color: #777;
+}
+
+.sidebar .edit-btn {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar .edit-btn:hover {
+  color: #007bff;
+}
+
+/* Sidebar body */
+.sidebar .sidebar-body {
+  padding: 10px 0;
+}
+
+.sidebar .sidebar-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .section-title {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+}
+
+.sidebar .sidebar-body li {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar .sidebar-body li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.sidebar-body li a:hover,
+.sidebar .sidebar-body li a.active {
+  color: #ff0000; /* Red color for active/hover as per image */
+}
+
+.sidebar .sidebar-body li a svg {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Dropdown submenu */
+.sidebar .submenu > a {
+  position: relative;
+}
+
+.sidebar .submenu {
+  display: block !important;
+}
+
+.sidebar .menu-arrow {
+  position: absolute;
+  right: 20px;
+  font-size: 12px;
+  color: #666;
+}
+
+.sidebar .dropdown {
+  display: block;
+  background-color: #f9f9f9;
+  margin-left: 30px !important;
+  padding-top: 10px !important;
+}
+
+.sidebar .dropdown li {
+  padding: 10px 0;
+}
+
+.sidebar .submenu ul li a {
+  font-size: 13px;
+  color: #555;
+}
+
+.sidebar .submenu ul li a.active {
+  color: #ff0000;
+}
+
+/* Message and Notification badges */
+.sidebar .message-content {
+  position: relative;
+}
+
+.sidebar .msg-count {
+  background-color: #28a745;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.sidebar .bg-purple {
+  background-color: #6f42c1; /* Purple badge for Notifications */
+}
+
+/* Ensure no overlap or styling issues */
+.sidebar .sidebar-body li a {
+  position: relative;
+  z-index: 1;
+}

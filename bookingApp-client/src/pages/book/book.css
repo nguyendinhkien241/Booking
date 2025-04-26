@@ -1,0 +1,292 @@
+.bookContainer {
+    height: 100%;
+    width: 100%;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.bookContainer .container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    position: relative; /* Để order-details có thể cố định trong container */
+}
+
+.checkout-section {
+    flex: 1;
+}
+
+.bookContainer .order-details {
+    flex: 0 0 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: sticky; /* Dùng sticky để cố định trong container */
+    top: 20px; /* Khoảng cách từ đỉnh container */
+    height: fit-content; /* Đảm bảo chiều cao tự động */
+}
+
+.bookContainer .checkout-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.bookContainer h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+ 
+.bookContainer h2 .edit-icon {
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.bookContainer .section {
+    margin-bottom: 20px;
+}
+
+.bookContainer h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.bookContainer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bookContainer .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.bookContainer input, .bookContainer select, .bookContainer textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.bookContainer select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23333" d="M2 4l4 4 4-4H2z"/></svg>') no-repeat right 10px center;
+    background-size: 10px;
+}
+
+.bookContainer textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.bookContainer .coupon-group {
+    display: flex;
+    align-items: center;
+}
+
+.bookContainer .coupon-group input {
+    width: calc(100% - 150px);
+}
+
+.bookContainer .apply-coupon {
+    padding: 10px 20px;
+    background-color: #e76f51;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 150px;
+}
+
+.bookContainer .coupon-message {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.bookContainer .coupon-message.success {
+    background-color: #e6f4ea;
+    color: #2e7d32;
+}
+
+.bookContainer .coupon-message.error {
+    background-color: #fce4e4;
+    color: #d32f2f;
+}
+
+.bookContainer .coupon-message a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.bookContainer .coupon-message button {
+    margin-left: 8px;
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+.bookContainer .payment-options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bookContainer .payment-options label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.bookContainer .payment-options label p {
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.bookContainer .payment-options input {
+}
+
+.bookContainer .card-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.bookContainer .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.bookContainer .card img {
+    width: 30px;
+    height: auto;
+}
+
+.bookContainer .card span {
+    font-size: 14px;
+    color: #333;
+}
+
+.bookContainer .remove-card {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+}
+
+.bookContainer .add-card {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bookContainer .confirm-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #e76f51;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.bookContainer .order-item {
+    /* display: flex;
+    gap: 10px; */
+    margin-bottom: 20px;
+}
+
+.bookContainer .order-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.bookContainer .order-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookContainer .order-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.bookContainer .rating {
+    color: #f4a261;
+    font-size: 14px;
+}
+
+.bookContainer .rating span {
+    color: #333;
+    margin-right: 5px;
+}
+
+.bookContainer .order-info p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.bookContainer .traveler-info, .payment-info {
+    margin-bottom: 20px;
+}
+
+.bookContainer .traveler-info h4, .payment-info h4 {
+    font-size: 16px;
+    color: #e76f51;
+    margin-bottom: 10px;
+}
+
+.bookContainer .traveler-info p, .payment-info p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookContainer .payment-info .total {
+    font-size: 18px;
+    color: #e76f51;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.bookContainer .payment-info .total span {
+    color: #e76f51;
+}
